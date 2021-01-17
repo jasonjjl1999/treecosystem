@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  /////////////////// CREATE ///////////////////////////
+  /////////////////// CREATE & BIOMES ///////////////////////////
 
   name_biome: {
     padding: 20,
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     width: '30%',
     fontFamily: 'Poppins_600SemiBold',
     justifyContent: 'center',
-    top: "25%",
+    top: "20%",
     width: "60%",
   },
 
@@ -166,11 +166,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#582954',
     fontFamily: 'Poppins_600SemiBold',
-    top: '30%',
+    top: '25%',
   },
 
   left_image: {
-    top: "40%",
+    top: "35%",
     width: "80%",
     height: undefined,
     justifyContent: 'center',
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
   },
 
   right_image: {
-    top: "35%",
+    top: "29%",
     width: undefined,
     height: undefined,
     justifyContent: 'center',
@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
   },
 
   left_text: {
-    top: "45%",
+    top: "38%",
     left: "40%",
     justifyContent: 'center',
     alignItems: 'center',
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
   },
 
   right_text: {
-    top: "38%",
+    top: "31.5%",
     left: "15%",
     justifyContent: 'center',
     alignItems: 'center',
@@ -222,12 +222,12 @@ const styles = StyleSheet.create({
 
   left_category_button:
   {
-    top: "50%",
+    top: "44%",
     left: "40%",
   },
 
   right_category_button: {
-    top: "43%",
+    top: "37.5%",
     left: "10%",
   },
 

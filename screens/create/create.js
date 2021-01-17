@@ -25,20 +25,27 @@ export function CreateNav({ navigation }) {
 function Create({ navigation }){
   return (
     <View style={styles.container}>
+        <LinearGradient
+          colors={['#d7e7ff', '#E4E1FE' ]}
+          style={styles.background}
+        />
+
       <LinearGradient
-        colors={['#abc8f2', '#cfc8e4' ]}
-        style={styles.background}
-      />
-      <Text style={[styles.text, styles.main_title]}>CREATE</Text>
+          colors={['#FDFCFD', '#FDFCFD']}
+          style={styles.name_biome}>
+          <Text
+            style={[styles.text, styles.name_biome_prompt]}
+          >Welcome to TreeCosystem! Build your first biome by clicking "CREATE"</Text>
+        </LinearGradient>
 
       {/* Element to show navigation animation, can be deleted later*/}
       <LinearGradient
         colors={['#ee7861', '#ed9a62']}
         style={[styles.button, styles.button_container]}>
         <Text
-          style={styles.text}
+          style={[styles.text, styles.category_text]}
           onPress={() => navigation.navigate('Biomes')}
-        >Progress to Next Screen</Text>
+        >CREATE</Text>
       </LinearGradient>
 
     </View>
