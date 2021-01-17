@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Image, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { styles } from '../styles/styles.js'
 

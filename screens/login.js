@@ -12,9 +12,9 @@ const Stack = createStackNavigator();
 export function LoginNav(){
   return(
   <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
-      <Stack.Screen name="Logout" component={BottomTab} options={{headerShown: false}}/>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="BottomTab" component={BottomTab} />
     </Stack.Navigator>
   </NavigationContainer>
   );
@@ -43,8 +43,8 @@ export function Login({ navigation }){
           style={[styles.button, styles.button_container]}>
           <Text
             style={styles.text}
-            onPress={() => navigation.navigate('Logout')}
-          >View my Biomes</Text>
+            onPress={() => navigation.navigate('BottomTab')}
+          >Log In</Text>
         </LinearGradient>
   
         <LinearGradient
