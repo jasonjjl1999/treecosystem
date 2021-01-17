@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: 'Poppins_500Medium',
     color: 'rgba(88, 41, 84, 0.5)',
-
   },
 
   text: {
@@ -100,9 +99,9 @@ const styles = StyleSheet.create({
   },
 
   user_image: {
-    width: 50,
-    height: 50,
     top: '15%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
 });

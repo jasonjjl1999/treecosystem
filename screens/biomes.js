@@ -12,9 +12,10 @@ export function Biomes({ navigation }) {
     <View style={styles.container}>
 
     <LinearGradient
-        colors={['#abc8f2', '#cfc8e4' ]}
-        style={styles.background}
-      />
+      colors={['#d7e7ff', '#E4E1FE' ]}
+      style={styles.background}
+    />
+  
 
       <Text>Biomes Here</Text>
     </View>

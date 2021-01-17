@@ -3,6 +3,7 @@ import { Image, View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { FontAwesome5  } from '@expo/vector-icons';
 
 import { styles } from '../styles/styles.js'
 import { BottomTab } from '../components/tab.js'
@@ -25,16 +26,14 @@ export function Login({ navigation }){
       <View style={styles.container}>
         
         <LinearGradient
-          colors={['#abc8f2', '#cfc8e4' ]}
+          colors={['#d7e7ff', '#E4E1FE' ]}
           style={styles.background}
         />
   
         <Text style={[styles.text, styles.main_title]}>TreeCosystem</Text>
   
-        <Image
-          style={styles.user_image}
-          source={require('../assets/favicon.png')}
-        />
+        
+        <FontAwesome5 style={styles.user_image} name="user" size={40} color="#3E183A" />
   
         <Text style={[styles.text, styles.sub_title]}>LOGIN</Text>
   
