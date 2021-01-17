@@ -13,8 +13,8 @@ export function LoginNav(){
   return(
   <NavigationContainer>
     <Stack.Navigator>
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Logout" component={BottomTab} />
+      <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
+      <Stack.Screen name="Logout" component={BottomTab} options={{headerShown: false}}/>
     </Stack.Navigator>
   </NavigationContainer>
   );
