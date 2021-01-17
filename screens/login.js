@@ -13,9 +13,9 @@ const Stack = createStackNavigator();
 export function LoginNav(){
   return(
   <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
-      <Stack.Screen name="Logout" component={BottomTab} options={{headerShown: false}}/>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="BottomTab" component={BottomTab} />
     </Stack.Navigator>
   </NavigationContainer>
   );
@@ -45,7 +45,6 @@ export function Login({ navigation }){
   
         <Text style={[styles.text, styles.sub_title]}>LOGIN</Text>
   
-   
         <LinearGradient
           colors={['#FDFCFD', '#FDFCFD']}
           style={[styles.button, styles.username_container]}>
@@ -77,7 +76,7 @@ export function Login({ navigation }){
           style={[styles.button, styles.button_container]}>
           <Text
             style={[styles.text, styles.login]}
-            onPress={() => navigation.navigate('Logout')}
+            onPress={() => navigation.navigate('BottomTab')}
           >Log In</Text>
         </LinearGradient>
   
