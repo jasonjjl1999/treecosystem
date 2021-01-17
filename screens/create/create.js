@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { createStackNavigator, HeaderTitle } from '@react-navigation/stack';
 import { LinearGradient } from 'expo-linear-gradient';
 import { styles } from '../../styles/styles.js'
-import { AntDesign } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
 import { Biomes } from './biomes.js'
 
@@ -14,7 +14,7 @@ export function CreateNav({ navigation }) {
     <Stack.Navigator screenOptions={{
       headerTransparent: true,
       title: '',
-      headerBackImage: () => (<AntDesign name="left" size={40} color='#582954' />),
+      headerBackImage: () => (<Entypo name="chevron-thin-left" size={40} color="#582954" />),
     }}>
       <Stack.Screen name="Create" component={Create} options={{headerShown: false}}/>
       <Stack.Screen name="Biomes" component={Biomes}/>
