@@ -120,6 +120,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
+  /////////////////// MAIN ///////////////////////////
+
+  main_image: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: "90%",
+    height: undefined,
+    aspectRatio: 1,
+
+  },
+
+
   /////////////////// CREATE & BIOMES ///////////////////////////
 
   name_biome: {
