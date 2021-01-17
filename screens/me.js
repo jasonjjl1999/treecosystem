@@ -7,9 +7,10 @@ export function Me({ navigation }){
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={['#abc8f2', '#cfc8e4' ]}
-        style={styles.background}
-      />
+          colors={['#d7e7ff', '#E4E1FE' ]}
+          style={styles.background}
+       />
+  
       <Text style={[styles.text, styles.main_title]}>ME</Text>
     </View>
   );

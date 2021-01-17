@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Image, View, Text } from 'react-native';
+import { Image, View, Text, TextInput  } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -21,7 +21,15 @@ export function LoginNav(){
   );
 }
 
+let text = '';
 export function Login({ navigation }){
+  const [value, onChangeText] = React.useState('')
+
+  function textChangeHandler(event){
+    onChangeText(event.target.value)
+     text = event.target.value;
+  }
+
     return (
       <View style={styles.container}>
         
@@ -37,33 +45,48 @@ export function Login({ navigation }){
   
         <Text style={[styles.text, styles.sub_title]}>LOGIN</Text>
   
-        <LinearGradient
-          colors={['#ee7861', '#ed9a62']}
-          style={[styles.button, styles.button_container]}>
-          <Text
-            style={styles.text}
-            onPress={() => navigation.navigate('Logout')}
-          >View my Biomes</Text>
-        </LinearGradient>
-  
+   
         <LinearGradient
           colors={['#FDFCFD', '#FDFCFD']}
           style={[styles.button, styles.username_container]}>
-          <Text
+          <TextInput 
             style={[styles.text, styles.user_info]}
-          >username</Text>
+            placeholderTextColor="rgba(88, 41, 84, 0.5)"
+            placeholder="username"
+            onChange={textChangeHandler}
+            value = {value}
+          ></TextInput>
         </LinearGradient>
   
         <LinearGradient
           colors={['#FDFCFD', '#FDFCFD']}
           style={[styles.button, styles.password_container]}>
-          <Text
+          <TextInput
             style={[styles.text, styles.user_info]}
-          >password</Text>
+            placeholder="password"
+            placeholderTextColor="rgba(88, 41, 84, 0.5)"
+            onChange={textChangeHandler}
+            value = {value}
+          ></TextInput>
         </LinearGradient>
   
         <Text style={[styles.text, styles.signup]}>Not a member? <Text style={[styles.text, styles.signup_link]}>Sign up now!</Text></Text>
   
+        <LinearGradient
+          colors={['#ee7861', '#ed9a62']}
+          style={[styles.button, styles.button_container]}>
+          <Text
+            style={[styles.text, styles.login]}
+            onPress={() => navigation.navigate('Logout')}
+          >Log In</Text>
+        </LinearGradient>
+  
+
+        <Image
+          style={styles.banner_image}
+          source={require('../assets/grass_banner.png')}
+        />
+
       </View>
     );
   }

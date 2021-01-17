@@ -20,10 +20,10 @@ export function HomeNav({ navigation }) {
 function Home({ navigation }){
   return (
     <View style={styles.container}>
-      <LinearGradient
-        colors={['#abc8f2', '#cfc8e4' ]}
-        style={styles.background}
-      />
+        <LinearGradient
+          colors={['#d7e7ff', '#E4E1FE' ]}
+          style={styles.background}
+        />
       <Text style={[styles.text, styles.main_title]}>MAIN</Text>
     </View>
   );

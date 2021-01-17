@@ -6,10 +6,11 @@ import { styles } from '../styles/styles.js'
 export function Friends({ navigation }){
   return (
     <View style={styles.container}>
-      <LinearGradient
-        colors={['#abc8f2', '#cfc8e4' ]}
-        style={styles.background}
-      />
+	  <LinearGradient
+	      colors={['#d7e7ff', '#E4E1FE' ]}
+	      style={styles.background}
+		/>
+  
       <Text style={[styles.text, styles.main_title]}>FRIENDS</Text>
     </View>
   );
