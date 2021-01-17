@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { styles } from '../../styles/styles.js'
 
@@ -32,7 +32,7 @@ export function Biomes({ navigation }){
 	        <View style={{flex: 3, flexDirection: 'column'}}>
 		        <Image
 		          style={styles.left_image}
-		          source={require('../assets/aquarium.png')}
+		          source={require('../../assets/aquarium.png')}
 		          resizeMode={'contain'}
 		        />
 		        <Text style={styles.left_text}>Aquarium</Text>
@@ -51,7 +51,7 @@ export function Biomes({ navigation }){
 	        <View style={{flex: 3, flexDirection: 'column'}}>
 	  			<Image
 		          style={styles.right_image}
-		          source={require('../assets/biome.png')}
+		          source={require('../../assets/biome.png')}
 		          resizeMode={'contain'}
 		        />
 		    	<Text style={styles.right_text}>Garden</Text>
