@@ -4,20 +4,20 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { styles } from '../styles/styles.js'
-import { Biomes } from '../screens/biomes.js'
+import { Biomes } from './biomes.js'
 
 const HomeStack = createStackNavigator();
 
-export function IndexNav({ navigation }) {
+export function HomeNav({ navigation }) {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen name="Home" component={Index} />
+      <HomeStack.Screen name="Home" component={Home} options={{headerShown: false}}/>
       <HomeStack.Screen name="Biomes" component={Biomes} />
     </HomeStack.Navigator>
   );
 }
 
-function Index({ navigation }){
+function Home({ navigation }){
   return (
     <View style={styles.container}>
       <LinearGradient
